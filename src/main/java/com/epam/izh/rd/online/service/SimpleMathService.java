@@ -1,9 +1,4 @@
 package com.epam.izh.rd.online.service;
-
-
-
-
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -119,6 +114,7 @@ public class SimpleMathService implements MathService {
     @Override
     public long calcFibonacci(int number) {
 
+        int x = 0;
         int [] fibo = new int [100];
         fibo[0] = 0;
         fibo[1] = 1;
@@ -139,6 +135,8 @@ public class SimpleMathService implements MathService {
      * Метод возвращает отсортированный по возрастанию массив.
      * Например для массива {-1, -3, 4, 8, 5, 22, -5} метод должен вернуть {-5, -3, -1, 4, 5, 8, 22}
      */
+
+
     @Override
     public int[] sort(int[] values) {
 
